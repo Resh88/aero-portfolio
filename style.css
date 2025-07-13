@@ -1,13 +1,13 @@
 body { 
-font-family: Ariel, sans-serif;
-background-color: #cbf5f1;
+font-family: Source Sans Pro;
+background-color: #fcfcfc;
 margin: 0;
 padding: 0;
 text-align: center;
 }
 header {
-  background-color: #968080;
-  color: white;
+  background-color: #b7b3f2;
+  color: Black;
   padding: 40px 0;
   border-bottom: 5px solid #073952;
 }
@@ -35,4 +35,50 @@ nav a {
 }
 nav a:hover {
   text-decoration: underline;
+}
+/* Header layout */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: #f4f4f4;
+}
+
+/* Logo on left */
+.logo img {
+  height: 50px;
+}
+
+/* Title in center */
+.site-title {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.site-title h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.site-title p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Navigation on right */
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #007BFF;
 }
